@@ -1,0 +1,167 @@
+
+<header>
+  <style>
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+
+    header {
+      background-color: #56b7e4;
+      color: rgb(2, 2, 2);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      background-color: #56b7e4;
+      
+}
+
+.container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+}
+
+.scenario {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+
+.question {
+      margin-top: 15px;
+}
+
+.question strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #2c3e50;
+}
+
+.solution {
+      background: #83cdf0;
+      padding: 10px;
+      border-left: 4px solid #3498db;
+      margin-top: 5px;
+      display: none;
+}
+.justification {
+      background: #83cdf0;
+      padding: 10px;
+      border-left: 4px solid #3498db;
+      margin-top: 5px;
+      display: none;
+}
+.toggle-btn {
+      background-color: #70c1f7;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      margin-top: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 14px;
+}
+
+.toggle-btn:hover {
+      background-color: #2980b9;
+}
+  </style>
+
+<body>
+
+  <header>
+    <h1>Correction des scénarios 1 – Ossama Ettaliy</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="scenario">
+      <h2>Scénario 2 : Création d'une plateforme collaborative pour des utilisateurs distants : Application pour une entreprise</h2>
+
+      <div class="question">
+        <strong>1.	Quel type d'application (Desktop, Web ou Mobile) choisiriez-vous pour ce projet, et pourquoi ? </strong>
+        <button class="toggle-btn" onclick="toggleSolution(this)">Afficher la solution</button>
+        <div class="solution">Desktop .</div>
+        <button class="toggle-btn" onclick="ToggleEvent(this)">Afficher le justification</button>
+        <div class="justification">car  être utilisée par plusieurs employés sur des ordinateurs de bureau dans l'entreprise, sans connexion Internet
+
+</div>
+      </div>
+
+      <div class="question">
+        <strong>2.	Quels langages et frameworks utiliseriez-vous pour développer cette application ? </strong>
+        <button class="toggle-btn" onclick="toggleSolution(this)">Afficher la solution</button>
+        <div class="solution">la language de programmation C++ </div>
+
+      </div>
+
+      <div class="question">
+        <strong>3.	Quels sont les avantages spécifiques du type d’application que vous avez choisi dans ce contexte (performance, sécurité, gestion des ressources, etc.) ?  </strong>
+        <button class="toggle-btn" onclick="toggleSolution(this)">Afficher la solution</button>
+        <div class="solution">L'application tourne directement sur la machine, sans passer par un navigateur ou un serveur distant , Et les Données traitées localement  et les applications peut accéder à la RAM.</div>
+      </div>
+
+      <div class="question">
+        <strong>4.	Quels pourraient être les inconvénients ou défis liés au type d'application choisi (déploiement, mise à jour, compatibilité avec le système d'exploitation, etc.) ?
+
+</strong>
+        <button class="toggle-btn" onclick="toggleSolution(this)">Afficher la solution</button>
+        <div class="solution">
+ Mises à jour moins faciles et Sécurité dépend de la machine locale ,Compatibilité entre OS
+          
+</div>
+      </div>
+    </div>
+<script>
+  
+function toggleSolution(button) {
+  const solution = button.nextElementSibling;
+  if (solution.style.display === "none" || solution.style.display === "") {
+    solution.style.display = "block";
+    button.textContent = "Masquer la solution";
+} else {
+    solution.style.display = "none";
+    button.textContent = "Afficher la solution";
+}
+}
+
+function ToggleEvent(button) {
+  const justification = button.nextElementSibling;
+  if (justification.style.display === "none" || justification.style.display === "") {
+    justification.style.display = "block";
+    button.textContent = "Masquer le justification";
+} else {
+    justification.style.display = "none";
+    button.textContent = "Afficher le justification";
+}
+}
+</script>
+
+<script>
+function toggleSolution(button) {
+      const solution = button.nextElementSibling;
+      if (solution.style.display === "none" || solution.style.display === "") {
+        solution.style.display = "block";
+        button.textContent = "Masquer la solution";
+} else {
+        solution.style.display = "none";
+        button.textContent = "Afficher la solution";
+}
+}
+  </script>
+
+</body>
+  <a href="index.html" style="color:white; text-decoration:underline;">← Retour à l'accueil</a>
+</header>
